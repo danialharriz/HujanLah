@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hujanlah/services/weather_service.dart';
-import 'package:hujanlah/models/weather_model.dart'; 
+import 'package:hujanlah/models/weather_model.dart';
+import 'package:lottie/lottie.dart'; 
 
 
 class WeatherPage extends StatefulWidget {
@@ -37,7 +38,7 @@ _fetchWeather() async {
   
   //initiate the weather
   @override
-  void initiateState(){
+  void initState(){
     super.initState();
     _fetchWeather();
   }
@@ -51,6 +52,8 @@ _fetchWeather() async {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(_weather?.cityName ?? 'Loading...'),
+
+            //Lottie.asset('assets/sunny.json'),
 
             Text('${_weather?.temperature.round()}°C')
           ],

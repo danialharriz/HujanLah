@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'pages/weather_page.dart';
 
 void main() {
@@ -13,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WeatherPage(),
+      theme: ThemeData(
+        fontFamily: 'Inter', // Apply Inter font globally
+      ),
+      home: const WeatherPage(),
     );
   }
 }
