@@ -1,4 +1,4 @@
-# 🌧 HujanLah - Simple Weather App
+# 🌧 HujanLah - Simple Weather App (Progress 40%)
 
 HujanLah is a lightweight weather app built using **Flutter**. It provides real-time weather updates based on your current location, fetching data from a weather API.
 
